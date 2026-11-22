@@ -1,98 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rakesh | Portfolio</title>
-  <!-- Google Fonts import for modern look -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Rakesh | B.Tech CSE Developer</title>
+<meta name="description" content="Portfolio of Rakesh, a B.Tech CSE student building web apps and games.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css" />
 </head>
 <body>
+<div class="aurora" aria-hidden="true"><i></i><i></i><i></i></div>
+<div class="grid" aria-hidden="true"></div>
+<div class="spot" id="spot" aria-hidden="true"></div>
 
-  <!-- Navigation Bar -->
-  <nav class="navbar">
-    <div class="logo">Rakesh</div>
-    <div class="nav-links">
-      <a href="#projects">Projects</a>
-      <a href="#skills">Skills</a>
-      <a href="#about">About</a>
-    </div>
-  </nav>
+<header><nav>
+  <a class="logo" href="#top" id="top">rakesh<b>.dev</b></a>
+  <div class="links">
+    <a href="#projects">projects</a><a href="#stack">stack</a><a href="#about">about</a>
+    <a class="keep" href="https://github.com/Rakesh-2609">github</a>
+    <button id="theme" aria-label="Toggle light and dark theme">theme</button>
+  </div>
+</nav></header>
 
-  <!-- Hero Section -->
-  <header class="hero">
-    <div class="hero-content">
-      <p class="tagline">Hello World, I am</p>
-      <h1>Rakesh</h1>
-      <div class="terminal-loader">
-        <span class="code-text">Student | Developer | Coder | Programmer</span>
-      </div>
-      <p class="sub-intro">I build clean, high-performance, and modern web applications.</p>
-      <a href="#projects" class="btn">Explore My Work</a>
+<main class="wrap">
+<div class="hero">
+  <div>
+    <div class="badge">B.Tech CSE · open to learn &amp; build</div>
+    <h1>Hi, I'm <span>Rakesh</span></h1>
+    <p class="role" id="role" aria-label="Student, developer, programmer"></p>
+    <p class="lead">I build clean, fast web apps and games, and I'm turning a 12th-standard hobby into real software engineering.</p>
+    <div class="btns">
+      <a class="btn pri" href="#projects">View my work</a>
+      <a class="btn" href="https://github.com/Rakesh-2609">GitHub</a>
     </div>
-  </header>
-  
-  <!-- Projects Section -->
-  <section id="projects">
-    <div class="container">
-      <h2 class="section-title">Featured Projects</h2>
-      <div class="cards-grid">
-        
-        <a href="https://github.com/Rakesh-2609" class="card" target="_blank">
-            <div class="card-tag">Code</div>
-            <h3>My GitHub Profile</h3>
-            <p>Explore my open-source contributions, scripts, and repositories.</p>
-            <span class="card-link">View Profile &rarr;</span>
-          </a>
+  </div>
+  <div class="editor" aria-hidden="true"><div>
+    <div class="bar"><b></b><b></b><b></b><span>rakesh.js</span></div>
+<pre id="code"></pre>
+  </div></div>
+</div>
+</main>
 
-        <a href="https://rakesh-2609.github.io/Star-Catcher-Web-Game/" class="card" target="_blank">
-          <div class="card-tag">Game Dev</div>
-          <h3>Star Catcher Game</h3>
-          <p>An interactive JavaScript arcade game built with clean logic.</p>
-          <span class="card-link">Play Game &rarr;</span>
-        </a>
-        
-      </div>
-    </div>
-  </section>
+<div class="marquee" aria-hidden="true"><div class="track" id="track"></div></div>
 
-  <!-- Skills Section -->
-  <section id="skills">
-    <div class="container">
-      <h2 class="section-title">My Tech Stack</h2>
-      <div class="skills-container">
-        <span class="skill-badge"><span class="dot html-dot"></span> HTML5</span>
-        <span class="skill-badge"><span class="dot css-dot"></span> CSS3</span>
-        <span class="skill-badge"><span class="dot js-dot"></span> JavaScript</span>
-        <span class="skill-badge"><span class="dot py-dot"></span> Python</span>
-      </div>
+<main class="wrap">
+<section id="projects">
+  <h2 class="rv">Featured <em>projects</em></h2>
+  <p class="sub rv">Things I've built and shipped. Everything here runs in the browser.</p>
+  <div class="projects">
+    <a class="card rv" style="--h:var(--c3)" href="https://rakesh-2609.github.io/Star-Catcher-Web-Game/">
+      <div class="ico">🎮</div><span class="tag">game / javascript</span>
+      <h3>Star Catcher</h3>
+      <p>An arcade game in vanilla JavaScript. Catch the falling stars, build your score and beat your own record.</p>
+      <span class="go">Play the game <i>→</i></span>
+    </a>
+    <a class="card rv" style="--h:var(--c2)" href="https://github.com/Rakesh-2609">
+      <div class="ico">🧑‍💻</div><span class="tag">open source</span>
+      <h3>GitHub profile</h3>
+      <p>Scripts, experiments and repositories. Browse the code, history and what I'm learning next.</p>
+      <span class="go">See repositories <i>→</i></span>
+    </a>
+    <div class="card ghost rv" style="--h:var(--c4)">
+      <div class="ico">🚀</div><span class="tag">in progress</span>
+      <h3>Next project</h3>
+      <p>Something new is being built alongside my coursework. Follow GitHub for updates.</p>
+      <span class="go">Coming soon</span>
     </div>
-  </section>
-  
-  <!-- About Section -->
-  <section id="about">
-    <div class="container">
-      <div class="about-box">
-        <h2 class="section-title">About Me</h2>
-        <p>
-          I am a passionate learner deeply interested in web development and software engineering. 
-          I love breaking complex problems into simple, elegant code. Constantly learning new stacks to build clean, intuitive and modern web experiences.
-        </p>
-      </div>
-    </div>
-  </section>
+  </div>
+</section>
 
-  <!-- Footer -->
-  <footer>
-    <div class="container">
-      <p>&copy; 2026 Rakesh. All rights reserved.</p>
-      <p class="footer-sub">Crafted with code and passion.</p>
-    </div>
-  </footer>
+<section id="stack">
+  <h2 class="rv">My <em>tech stack</em></h2>
+  <p class="sub rv">What I write code in today, and what I'm picking up next.</p>
+  <div class="stack">
+    <div class="group rv" style="--h:var(--c2)"><h3>languages</h3><div class="chips"><span class="chip">Python</span><span class="chip">JavaScript</span></div></div>
+    <div class="group rv" style="--h:var(--c3)"><h3>web</h3><div class="chips"><span class="chip">HTML5</span><span class="chip">CSS3</span><span class="chip">Git &amp; GitHub</span></div></div>
+    <div class="group rv" style="--h:var(--c4)"><h3>learning now</h3><div class="chips"><span class="chip now">C / C++</span><span class="chip now">Java</span><span class="chip now">Data structures</span><span class="chip now">Algorithms</span></div></div>
+  </div>
+</section>
 
-  <script src="script.js"></script>
+<section id="about">
+  <h2 class="rv">About <em>me</em></h2>
+  <p class="sub rv">&nbsp;</p>
+  <div class="about">
+    <div class="rv">
+      <p>I'm a computer science student who loves breaking complex problems into small, readable pieces of code.</p>
+      <p>I made my first website in 12th standard. Now I'm studying B.Tech CSE and going deeper into programming fundamentals, algorithms and software engineering.</p>
+      <p>I keep learning new tools so I can build interfaces that feel clear, quick and modern.</p>
+    </div>
+    <ol class="path rv">
+      <li><b>First website</b><span>12th standard · HTML, CSS, JavaScript</span></li>
+      <li class="on"><b>B.Tech, Computer Science</b><span>now · DSA, core CS, projects</span></li>
+      <li><b>Next</b><span>bigger builds, open source, internships</span></li>
+    </ol>
+  </div>
+</section>
+
+<div class="cta rv">
+  <h2>Let's build <em>something</em></h2>
+  <p>Check my code, try the game, or follow along as I learn in public.</p>
+  <a class="btn pri" href="https://github.com/Rakesh-2609">Visit my GitHub</a>
+</div>
+</main>
+
+<footer><div class="wrap">
+  <span>© 2026 Rakesh · Crafted with code and passion</span>
+  <a href="https://github.com/Rakesh-2609">github.com/Rakesh-2609</a>
+</div></footer>
+<script src="script.js" defer></script>
 </body>
 </html>
